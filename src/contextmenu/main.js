@@ -12,6 +12,12 @@ window.onload=function(){
     /*阻止菜单点击冒泡，实现点击菜单时不隐藏菜单*/
     menu.onclick=function(event){
         event.stopPropagation();
+        alert(event.target.innerText);
+    }
+
+    menu.oncontextmenu=function(event){
+        /*阻止弹出默认菜单*/
+        event.preventDefault();
     }
 
     /*点击右键在适当的位置显示菜单*/
