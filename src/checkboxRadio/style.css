@@ -1,0 +1,38 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*radio*/
+.radio-label{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(input.png) -20px -4px no-repeat;
+}
+
+.radio-input{
+    display: none;
+}
+
+.radio-input:checked + .radio-label{
+    background-position: -55px -4px;
+}
+
+/*checkbox*/
+.checkbox-label{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(input.png) -20px -27px no-repeat;
+}
+
+.checkbox-input{
+    display: none;
+}
+
+.checkbox-input:checked + .checkbox-label{
+    background-position: -55px -26px;
+}
