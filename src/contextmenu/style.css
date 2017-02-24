@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    width: 700px;
+    height: 500px;
+    background-color: #f5f5f5;
+    line-height: 500px;
+    text-align: center;
+}
+
+#menu{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    border: 1px solid silver;
+    border-radius: 2px;
+}
+
+#menu li{
+    padding: 10px 15px;
+    list-style: none;
+    cursor: pointer;
+}
+
+#menu li:hover{
+    background-color: #c0c0c0;
+}
