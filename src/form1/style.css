@@ -29,10 +29,6 @@ form{
     box-shadow: 0 0 2px #c0c0c0;
 }
 
-.form-group .text-box:focus{
-    border-color: #2f79ba;
-}
-
 .form-group .btn{
     padding: 8px;
     color: #fff;
@@ -45,6 +41,22 @@ form{
     text-indent: 55px;
     color: #c0c0c0;
     font-size: 16px;
+}
+
+.form-group.success .message{
+    color: #5fba46;
+}
+
+.form-group.success .text-box{
+    border-color: #5fba46;
+}
+
+.form-group.danger .message{
+    color: #de000f;
+}
+
+.form-group.danger .text-box{
+    border-color: #de000f;
 }
 
 
