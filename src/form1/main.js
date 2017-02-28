@@ -13,27 +13,30 @@ window.onload=function(){
         if(name.value==null || name.value===''){
             message.innerText='姓名不能为空';
             name.parentNode.className='form-group danger';
+            name.select();
             return;
         }
         
-        //匹配出输入内容中字母和数字的个数
         var length=0;
-        var num=/\w+/g;
-        var match=null;
-        while((match=num.exec(value))!==null){
-            length+=match[0].length;
+        //匹配出输入内容中字母和数字的个数
+        var num=/[A-Za-z0-9]/g;
+        var numLen=value.match(num);
+        if(numLen){
+            length+=numLen.length;
         }
 
         //匹配出输入结果中汉字的个数
         var text=/[\u4e00-\u9fa5]/g;
-        while((match=text.exec(value))!==null){
-            length+=(match[0].length)*2;
+        var textLen=value.match(text);
+        if(textLen){
+            length+=(textLen.length*2);
         }
 
         //判断字符长度是否符合要求
         if(length>16 || length<4){
             message.innerText='长度必须为4~16个字符';
             name.parentNode.className='form-group danger';
+            name.select();
         }
         else{
             message.innerText='名称格式正确';
