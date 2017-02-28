@@ -10,7 +10,7 @@ window.onload=function(){
         var value=name.value;
 
         //判断输入内容是否为空
-        if(name.value==null || name.value===''){
+        if(name.value.length===0){
             message.innerText='姓名不能为空';
             name.parentNode.className='form-group danger';
             name.select();
