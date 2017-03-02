@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-size: 16px;
+}
+
+#show{
+    width: 100%;
+    overflow: hidden;
+}
+
+#show li{
+    float: left;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+}
