@@ -111,7 +111,7 @@ function getNum(){
     }
 
     var value=parseFloat(num.value);
-    if(value<min || value>max){
+    if(Number.isNaN(value) || value<min || value>max){
         alert('请输入10-100的数字');
         return null;
     }
