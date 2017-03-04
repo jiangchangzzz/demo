@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form id="form" class="form">
+        <div id="type" class="form-group">
+            <input type="radio" name="type" value="student">在校生
+            <input type="radio" name="type" value="work">非在校生
+        </div>
+        <div id="block">
+        <div class="student form-group">
+            <label for="city">学校</label>
+            <select id="city" name="city"></select>
+            <select id="school" name="school"></select>
+        </div>
+        <div class="work form-group">
+            <label for="company">就业单位</label>
+            <input type="text" id="company" name="company">
+        </div>
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>

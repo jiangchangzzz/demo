@@ -1,0 +1,66 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 18px;
+    font-family: '微软雅黑';
+}
+
+.form{
+    width: 500px;
+    height: 250px;
+    margin: 20px auto 0 auto;
+    border: 1px solid #c0c0c0;
+    padding: 20px;
+}
+
+.form input,select{
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.form .form-group{
+    margin-bottom: 20px;
+}
+
+.form .form-group:last-child{
+    margin-bottom: 0;
+}
+
+.form-group input:first-child{
+    margin-left: 20px;
+}
+
+.form-group input:last-child{
+    margin-left: 20px;
+}
+
+.form-group #city{
+    margin: 0 20px;
+    width: 100px;
+}
+
+.form-group #school{
+    width: 200px;
+}
+
+
+.student{
+    display: none;
+}
+
+.work{
+    display: none;
+}
+
+.studentSelected .student{
+    display: block;
+}
+
+.workSelected .work{
+    display: block;
+}

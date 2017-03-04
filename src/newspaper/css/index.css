@@ -154,10 +154,7 @@
     color: #000;
     text-decoration: underline;
     line-height: 40px;
-}
-
-.top-num .num-title:first-letter{
-    font-weight: bold;
+    font-variant: small-caps;
 }
 
 .top-num .num-add{
@@ -264,7 +261,8 @@
 
 .bottom-content .content-img{
     float: right;
-    margin: 20px 0 20px 20px;
+    margin: 80px 0 20px 20px;
+    shape-outside: inset(60px 0 0 0);
 }
 
 /*bottom-right*/
