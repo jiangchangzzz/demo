@@ -18,7 +18,7 @@ body{
     padding: 20px;
 }
 
-.form input,select{
+.form input,.form select{
     padding: 6px;
     border-radius: 4px;
 }
@@ -49,18 +49,10 @@ body{
 }
 
 
-.student{
+#student{
     display: none;
 }
 
-.work{
+#work{
     display: none;
-}
-
-.studentSelected .student{
-    display: block;
-}
-
-.workSelected .work{
-    display: block;
 }

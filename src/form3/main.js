@@ -3,7 +3,8 @@
 var form=document.getElementById('form');
 var type=document.getElementById('type');
 
-var block=document.getElementById('block');
+var student=document.getElementById('student');
+var work=document.getElementById('work');
 
 //学校信息数据
 var schoolData=[
@@ -21,10 +22,12 @@ function init(){
     type.addEventListener('change',function(event){
         var value=event.target.value;
         if(value==='student'){
-            block.className='studentSelected';
+            student.style.display='block';
+            work.style.display='none';
         }
         else{
-            block.className='workSelected';
+            student.style.display='none';
+            work.style.display='block';
         }
     });
 
