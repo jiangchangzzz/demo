@@ -21,14 +21,16 @@
 
     bindEvent(findEle,'click',function(){
         var text=textEle.value.trim();
-        var list=showEle.querySelectorAll('li');
+        if(text.length!==0){
+            var list=showEle.querySelectorAll('li');
 
-        for(var i=0,len=list.length;i<len;i++){
-            var liText=list[i].innerText;
-            if(liText.indexOf(text)!==-1){
-                list[i].className='active';
-            }else{
-                list[i].className='';
+            for(var i=0,len=list.length;i<len;i++){
+                var liText=list[i].innerText;
+                if(liText.indexOf(text)!==-1){
+                    list[i].className='active';
+                }else{
+                    list[i].className='';
+                }
             }
         }
     });

@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 18px;
+    font-family: '微软雅黑';
+}
+
+.container{
+    width: 800px;
+    margin: 40px auto;
+}
+
+.tree div{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 2px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.tree div.active{
+    background-color: #00f;
+}
