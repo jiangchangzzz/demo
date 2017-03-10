@@ -1,28 +1,23 @@
-@charset 'utf-8';
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    font-size: 18px;
-    font-family: '微软雅黑';
-}
-
-.container{
-    width: 800px;
-    margin: 40px auto;
-}
-
-.tree div{
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 2px;
-    background-color: #fff;
-    border: 1px solid #000;
-}
-
-.tree div.active{
-    background-color: #00f;
-}
+Backtrace:
+D:/windows/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:484:in `read'
+D:/windows/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+D:/windows/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+D:/windows/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+D:/windows/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/windows/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:294:in `watch'
+D:/windows/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin.rb:109:in `method_missing'
+D:/windows/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+D:/windows/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+D:/windows/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+D:/windows/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+D:/windows/sass/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+D:/windows/sass/Ruby23-x64/bin/sass:22:in `load'
+D:/windows/sass/Ruby23-x64/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }
