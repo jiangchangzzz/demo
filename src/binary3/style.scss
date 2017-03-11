@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 20px auto;
+    width: 1100px;
+    height: 150px;
+    cursor: pointer;
+
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 1;
+        height: 80%;
+        margin: 0 10px;
+        border: 1px solid #000;
+        border-radius: 2px;
+    }
+
+    div.root{
+        height: 100%;
+    }
+
+    div.active{
+        outline: 2px solid lightblue;
+    }
+}
+
+.remove-panel{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-panel{
+    text-align: center;
+}
