@@ -43,11 +43,10 @@
     //将已选择节点突出显示
     function activeNode(){
         //重置样式
-        var nodes=container.getElementsByTagName('div');
-        for(var i=0,len=nodes.length;i<len;i++){
-            nodes[i].classList.remove('active');
+        var oldActive=container.getElementsByClassName('active')[0];
+        if(oldActive!=null){
+            oldActive.classList.remove('active');
         }
-
         selectedNode.classList.add('active');
     }
 
