@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 20px auto;
+    width: 1100px;
+    height: 150px;
+
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 1;
+        height: 80%;
+        margin: 0 10px;
+        border: 1px solid #000;
+    }
+
+    div.root{
+        height: 100%;
+    }
+
+    div.active{
+        outline: 2px solid lightblue;
+    }
+}
+
+.loop{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.find{
+    text-align: center;
+}

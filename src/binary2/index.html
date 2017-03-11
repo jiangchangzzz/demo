@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="root"><span>a</span>
+            <div><span>b</span>
+                <div><span>b</span>
+                    <div><span>c</span></div>
+                    <div><span>d</span></div>
+                    <div><span>e</span></div>
+                    <div><span>f</span></div>
+                    <div><span>g</span></div>
+                    <div><span>h</span></div>
+                    <div><span>i</span></div>
+                </div>
+            </div>
+            <div><span>j</span>
+                <div><span>k</span>
+                    <div><span>l</span></div>
+                    <div><span>m</span></div>
+                    <div><span>n</span></div>
+                </div>
+                <div><span>o</span>
+                    <div><span>p</span>
+                        <div><span>q</span></div>
+                    </div>
+                    <div><span>r</span></div>
+                </div>
+            </div>
+            <div><span>s</span></div>
+        </div>
+    </div>
+    <div class="loop">
+        <button type="button" id="firstl">先根遍历</button>
+        <button type="button" id="lastl">后根遍历</button>
+    </div>
+    <div class="find">
+        <input type="text" id="text">
+        <button type="button" id="firstf">先根查找</button>
+        <button type="button" id="lastf">后根查找</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
