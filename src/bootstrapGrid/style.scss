@@ -1,11 +1,8 @@
 @mixin clearfloat{
-    zoom: 1;
-
+    &:before,
     &:after{
-        display: block;
-        height: 0;
-        visibility: none;
         content: '';
+        display: table;
         clear: both;
     }
 }
@@ -22,9 +19,9 @@
 }
 
 .container{
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid silver;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .row{
@@ -33,6 +30,7 @@
 
 [class*="col"]{
     float: left;
+    min-height: 1px;
     padding: 10px;
     @include box-sizing(border-box);
 }
