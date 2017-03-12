@@ -6,7 +6,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between;
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
@@ -18,11 +17,10 @@
     .container {
       align-items: flex-start; }
       .container .block:nth-child(4) {
-        order: -1;
-        margin-top: 20px; } }
+        order: -1; } }
   .container .block {
-    padding: 20px;
     width: 150px;
+    margin: 20px;
     border: 1px solid red; }
   .container .block:nth-child(1) {
     height: 120px; }
