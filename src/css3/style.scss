@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: '黑体';
+    counter-reset: paracount;
+}
+
+table,th,td{
+    border:2px solid #fff;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 250px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table{
+    border-collapse: collapse;
+
+    thead{
+        background-color: #000;
+        color: #fff;
+        text-align: left;
+
+        th{
+            font-weight: normal;
+        }
+    }
+
+    tbody{
+        td:first-child:before{
+            content: counter(paracount)'.';
+            counter-increment: paracount;
+        }
+
+        tr:nth-child(2n){
+            background-color: #cccccc;
+        }
+
+        tr:nth-child(1),
+        tr:nth-child(2),
+        tr:nth-child(3){
+            color: red;
+        }
+    }
+}
+
+.form-group{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.out-input{
+    box-shadow: 0 0 4px 4px lightblue;
+}
+
+.banner{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+
+    .color{
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: 600px;
+        animation-name: imglist;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+
+        div{
+            float: left;
+            width: 200px;
+            height: 150px;
+        }
+
+        div:nth-child(1){
+            background-color: red;
+        }
+
+        div:nth-child(2){
+            background-color: green;
+        }
+
+        div:nth-child(3){
+            background-color: blue;
+        }
+    }
+
+    .index{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .index li{
+        float: left;
+        margin-right: 4px;
+        padding: 4px 8px;
+        background-color: rgba(192,192,192,0.5);
+        color: #fff;   
+    }
+
+    .index li:last-child{
+        margin-right: 0;
+    }
+}
+
+@keyframes imglist{
+    0%,100%{
+        left: 0;
+    }
+
+    25%,75%{
+        left: -200px;
+    }
+
+    50%{
+        left: -400px;
+    }
+}
