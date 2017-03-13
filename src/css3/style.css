@@ -44,7 +44,14 @@ ul, ol {
   text-align: center; }
 
 .out-input {
-  box-shadow: 0 0 4px 4px lightblue; }
+  width: 50%;
+  padding: 4px;
+  transition: 400ms; }
+
+.out-input:focus {
+  width: 100%;
+  box-shadow: 0 0 24px royalblue;
+  transition: 400ms; }
 
 .banner {
   position: relative;
