@@ -84,9 +84,9 @@ ul,ol{
         left: 0;
         z-index: -1;
         width: 600px;
-        animation-name: imglist;
+        /*animation-name: imglist;
         animation-duration: 5s;
-        animation-iteration-count: infinite;
+        animation-iteration-count: infinite;*/
 
         div{
             float: left;
@@ -111,22 +111,21 @@ ul,ol{
         position: absolute;
         right: 0;
         bottom: 0;
-    }
 
-    .index li{
-        float: left;
-        margin-right: 4px;
-        padding: 4px 8px;
-        background-color: rgba(192,192,192,0.5);
-        color: #fff;   
-    }
-
-    .index li:last-child{
-        margin-right: 0;
+        a{
+            float: left;
+            margin-right: 4px;
+            padding: 4px 8px;
+            background-color: rgba(192,192,192,0.5);
+            color: #fff;   
+            &:last-child{
+                margin-right: 0;
+            }
+        }
     }
 }
 
-@keyframes imglist{
+/*@keyframes imglist{
     0%,100%{
         left: 0;
     }
@@ -138,4 +137,16 @@ ul,ol{
     50%{
         left: -400px;
     }
+}*/
+
+#banner1:target ~ .color{
+    left: 0;
+}
+
+#banner2:target ~ .color{
+    left: -200px;
+}
+
+#baner3:target ~ .color{
+    left: -400px;
 }

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    counter-reset: row;
+}
+
+.container {
+    position: relative;
+    width: 504px;
+    height: 504px;
+    margin: 20px auto;
+}
+
+.table {
+    border-collapse: collapse;
+    outline: 2px solid #000;
+
+    td {
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #c0c0c0;
+    }
+}
+
+.block {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    .head {
+        width: 50px;
+        height: 15px;
+        background-color: blue;
+    }
+    .body {
+        width: 50px;
+        height: 35px;
+        background-color: red;
+    }
+
+    &.left{
+        transform: rotate(-90deg);
+    }
+
+     &.right{
+        transform: rotate(90deg);
+    }
+
+    &.bottom{
+        transform: rotate(180deg);
+    }
+}
+
+.form-group{
+    text-align: center;
+
+    input,button{
+        padding: 4px 6px;
+    }
+}

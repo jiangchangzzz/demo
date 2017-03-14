@@ -63,9 +63,9 @@ ul, ol {
     left: 0;
     z-index: -1;
     width: 600px;
-    animation-name: imglist;
+    /*animation-name: imglist;
     animation-duration: 5s;
-    animation-iteration-count: infinite; }
+    animation-iteration-count: infinite;*/ }
     .banner .color div {
       float: left;
       width: 200px;
@@ -80,21 +80,35 @@ ul, ol {
     position: absolute;
     right: 0;
     bottom: 0; }
-  .banner .index li {
-    float: left;
-    margin-right: 4px;
-    padding: 4px 8px;
-    background-color: rgba(192, 192, 192, 0.5);
-    color: #fff; }
-  .banner .index li:last-child {
-    margin-right: 0; }
+    .banner .index a {
+      float: left;
+      margin-right: 4px;
+      padding: 4px 8px;
+      background-color: rgba(192, 192, 192, 0.5);
+      color: #fff; }
+      .banner .index a:last-child {
+        margin-right: 0; }
 
-@keyframes imglist {
-  0%,100% {
-    left: 0; }
-  25%,75% {
-    left: -200px; }
-  50% {
-    left: -400px; } }
+/*@keyframes imglist{
+    0%,100%{
+        left: 0;
+    }
+
+    25%,75%{
+        left: -200px;
+    }
+
+    50%{
+        left: -400px;
+    }
+}*/
+#banner1:target ~ .color {
+  left: 0; }
+
+#banner2:target ~ .color {
+  left: -200px; }
+
+#baner3:target ~ .color {
+  left: -400px; }
 
 /*# sourceMappingURL=style.css.map */
