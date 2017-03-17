@@ -1,55 +1,59 @@
-@mixin clearfloat{
+@mixin clearfloat {
     &:before,
-    &:after{
+    &:after {
         content: '';
         display: table;
         clear: both;
     }
 }
 
-@mixin box-sizing($sizing){
+@mixin box-sizing($sizing) {
     -webkit-box-sizing: $sizing;
     -moz-box-sizing: $sizing;
     box-sizing: $sizing;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
 
-.row{
+.row {
     @include clearfloat;
 }
 
-[class*="col"]{
+[class*="col"] {
     float: left;
     min-height: 1px;
     padding: 10px;
     @include box-sizing(border-box);
 }
 
-@for $i from 1 through 12{
-    .col-sm-#{$i}{
-        @media (max-width: 768px){
-             width: percentage($i /12);
-        }
+@for $i from 1 through 12 {
+    .col-sm-#{$i} {
+        width: percentage($i /12);
     }
+}
 
-    .col-md-#{$i}{
-        @media (min-width: 769px){
+//将媒体查询的代码放在后面，媒体查询和普通css特殊性是一样的
+@for $i from 1 through 12 {
+    @media (min-width: 769px) {
+        .col-md-#{$i} {
             width: percentage($i / 12);
+        }
+        .col-md-offset-#{$i} {
+            margin-left: percentage($i /12);
         }
     }
 }
 
-.rect{
+.rect {
     height: 50px;
     background-color: #eee;
     border: 1px solid #999;
@@ -57,20 +61,20 @@
     line-height: 50px;
 }
 
-.md-text{
-    @media (min-width: 769px){
+.md-text {
+    @media (min-width: 769px) {
         display: inline;
     }
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         display: none;
     }
 }
 
-.sm-text{
-    @media (min-width: 769px){
+.sm-text {
+    @media (min-width: 769px) {
         display: none;
     }
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         display: inline;
     }
 }
