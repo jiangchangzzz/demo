@@ -28,7 +28,8 @@ a:hover{
     border-radius: 4px;
 
     .panel-head{
-        background-color: #eeeeee;
+        background-image: linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
+        background-repeat: repeat-x;
         padding: 6px 14px;
         font-size: large;
 
