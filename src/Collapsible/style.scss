@@ -44,17 +44,18 @@ a:hover{
 
         //选择其相邻兄弟元素
         &:checked + .panel-body{
-            height: auto;
-            padding: 16px;
-            transition: 1s;
+            height: 150px;
             transition: height 500ms;
         }
     }
 
     .panel-body{
-        padding: 0;
         height: 0;
         overflow: hidden;
         transition: height 500ms;
+
+        p{
+            padding: 16px
+        }
     }
 }

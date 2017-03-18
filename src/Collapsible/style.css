@@ -32,14 +32,13 @@ a:hover {
   .panel .panel-radio {
     display: none; }
     .panel .panel-radio:checked + .panel-body {
-      height: auto;
-      padding: 16px;
-      transition: 1s;
+      height: 150px;
       transition: height 500ms; }
   .panel .panel-body {
-    padding: 0;
     height: 0;
     overflow: hidden;
     transition: height 500ms; }
+    .panel .panel-body p {
+      padding: 16px; }
 
 /*# sourceMappingURL=style.css.map */
