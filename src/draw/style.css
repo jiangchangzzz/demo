@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 802px;
+    margin: 20px auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.clearfloat{
+    zoom: 1;
+}
+
+.clearfloat:before,
+.clearfloat:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#draw{
+    border: 1px solid #ccc;
+}
+
+.tool li{
+    float: left;
+    margin-left: 40px;
+}
+
+.tool button{
+    padding: 4px 6px;
+    border: 1px solid lightblue;
+    background-color: lightblue;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tool button:hover{
+    background-color: #fff;
+    color: lightblue;
+}
+
+.tool input{
+    width: 50px;
+    padding: 2px 4px;
+    border: 1px solid silver;
+    border-radius: 4px;
+}

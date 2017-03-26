@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="draw" width="800" height="500"></canvas>
+        <ul class="tool clearfloat">
+            <li>
+                <label for="color">颜色</label>
+                <input type="color" id="color">
+            </li>
+            <li>
+                <button type="button" id="pen">画笔</button>
+            </li>
+            <li>
+                <button type="button" id="brush">刷子</button>
+                <label for="brushWidth">宽度</label>
+                <input type="number" id="brushWidth" value="20">
+            </li>
+            <li>
+                <button type="button" id="gun">喷枪</button>
+            </li>
+            <li>
+                <button type="button" id="eraser">橡皮</button>
+            </li>
+            <li>
+                <button type="button" id="clear">清空</button>
+            </li>
+        </ul>
+        <p>正在使用的工具是:<span id="tool-name"></span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
