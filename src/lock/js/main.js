@@ -2,11 +2,13 @@
 
 (function(){
 
+    //点引用类型
     function Point(x,y){
         this.x=x;
         this.y=y;
     }
 
+    //手势解锁引用类型
     function Lock(ele){
         this.context=ele.getContext('2d');
         this.width=ele.width;
@@ -210,7 +212,7 @@
                 var current=lock.getPassword();
 
                 if(password===current){
-                    text.innerText="密码正确";
+                    text.innerText="密码正确！";
                 }
                 else{
                     text.innerText="输入的密码不正确";

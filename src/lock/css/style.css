@@ -17,7 +17,7 @@ body{
     height: 100vh;
     flex-direction: column;
     font-family:Helvetica;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .header{
@@ -30,7 +30,7 @@ body{
 .header .title{
     line-height: 4rem;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .main{
@@ -55,12 +55,14 @@ body{
     justify-content: center;
 }
 
-.main-select .input-group{
-    margin: 20px 0;
+.main-select .input-group:first-child{
+    margin-bottom: 1.5rem;
 }
 
 .main-select .input-group input{
-    margin-right: 20px;
+    margin-right: 1rem;
+    width: 1rem;
+    height: 1rem;
 }
 
 
