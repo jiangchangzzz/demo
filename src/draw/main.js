@@ -105,6 +105,7 @@
                     context.lineWidth=1;
                     break;
                 case 'gun':
+                    context.moveTo(point.x,point.y);
                     context.arc(point.x,point.y,10,0,Math.PI*2,false);
                     context.fill();
                     break;

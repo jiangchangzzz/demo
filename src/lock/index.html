@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">手势密码</h1>
+    </header>
+    <main class="main">
+        <div class="main-picture">
+            <canvas class="draw" id="draw">
+                抱歉，您的手机暂时不支持<code>canvas</code>
+            </canvas>
+            <p id="text" class="text">请输入手势密码</p>
+        </div>
+        <div class="main-select">
+            <div class="input-group">
+                <input type="radio" name="password" checked id="setPassword" value="set">设置密码
+            </div>
+            <div class="input-group">
+                <input type="radio" name="password" id="checkPassword" value="check">验证密码
+            </div>
+        </div>
+    </main>
+    <div>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
