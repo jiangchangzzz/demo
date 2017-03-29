@@ -10,18 +10,18 @@
 
     //手势解锁引用类型
     function Lock(ele){
-        this.context=ele.getContext('2d');
-        this.width=ele.width;
-        this.height=ele.height;
-        this.points=[];
-        this.circles=[];
-        this.balls=[];
-        this.r=0;
+        this.context=ele.getContext('2d');   //绘图上下文
+        this.width=ele.width;                //画布宽度
+        this.height=ele.height;              //画布高度 
+        this.points=[];                      //九个点的位置
+        this.circles=[];                     //空心圈的序号
+        this.balls=[];                       //实心球的序号
+        this.r=0;                            //九个圈的半径
     };
 
     Lock.prototype={
 
-        //创建九个点的位置数据模型
+        //确定九个点的位置和半径
         createPoint: function(){
             this.r=Math.round(this.width/18);
             var offset=this.r*3;

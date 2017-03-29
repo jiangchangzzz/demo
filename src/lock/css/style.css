@@ -7,21 +7,24 @@ html{font-size:10px}
 @media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
 @media screen and (min-width:800px){html{font-size:25px}}
 
-body,header,main,h1,div,p,input{
+html{
+    height: 100%;
+}
+
+html,body,header,main,h1,div,p,input{
     margin: 0;
     padding: 0;
 }
 
 body{
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
+    height: 100%;
     font-family:Helvetica;
     font-size: 1.8rem;
 }
 
 .header{
     height: 4rem;
+    box-sizing: border-box;
     background-color: #f8f8f8;
     border-bottom: 1px solid #ccc;
     text-align: center;
@@ -37,8 +40,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: calc(100% - 4rem);
     background-color: #f0f0f2;
-    flex-grow: 1;
 }
 
 .main .main-picture{
