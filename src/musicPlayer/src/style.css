@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+.vol-progress{
+    height: 2px;
+    margin-top: 0.5em;
+}
+
+ .vol-progress .progress-bar{
+    background-color: #ccc;
+    width: 100%;
+}
+
+.music-progress{
+    height: 2px;
+    transition: 500ms;
+}
+
+.music-progress .progress-bar{
+    background-color: #90ee90;
+}
+
+.progress-wrap{
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+.progress-wrap:hover .progress{
+    transform: scaleY(2);
+}
+
+.music-control .glyphicon{
+    margin-top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.music-control .glyphicon:hover{
+    opacity: 0.5;
+}
+
+.music-img img{
+    height: 100%;
+    border-radius: 50%;
+}

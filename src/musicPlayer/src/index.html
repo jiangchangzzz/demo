@@ -1,28 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <audio id="music" controls preload="metadata" loop>
-        <source src="../mp4/what is love.mp3" type="audio/mp3">
-        <p>
-            Your browser does not supporting browsers, but you can
-            <a href="../mp4/music.mp4">download</a>
-        </p>
-    </audio>
-    <div>
-        <span id="load">loading...</span>
-        <button id="play">play</button>
-        <button id="pause">pause</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-4">
+                <h3 id="music-name">Candy Says</h3>
+                <p id="music-artist">The Velvet Underground</p>
+                <audio id="music" preload="metadata">
+                    <source id="music-source" type="audio/mp3">
+                </audio>
+                <div class="row">
+                    <div class="col-sm-2" id="music-time">00:00</div>
+                    <div class="col-sm-1"><i class="glyphicon glyphicon-volume-up"></i></div>
+                    <div class="col-sm-2">
+                        <div id="vol-progress" class="progress-wrap">
+                            <div class="progress vol-progress">
+                                <div id="vol-bar" class="progress-bar" role="progressbar">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="music-progress" class="progress-wrap">
+                    <div class="progress music-progress">
+                        <div id="music-bar" class="progress-bar" role="progressbar">
+                        </div>
+                    </div>
+                </div>
+                <div class="row music-control">
+                    <div class="col-sm-2"><i class="glyphicon glyphicon-heart"></i></div>
+                    <div class="col-sm-2"><i class="glyphicon glyphicon-align-justify" title="顺序播放"></i></div>
+                    <div class="col-sm-2 col-sm-offset-4"><i id="play" class="glyphicon glyphicon-play"></i></div>
+                    <div class="col-sm-2"><i id="next" class="glyphicon glyphicon-step-forward"></i></div>
+                </div>
+            </div>
+            <div class="col-sm-3 music-img">
+                <img src="image/风吹雪.jpg">
+            </div>
+        </div>
     </div>
-    <div id="progress">
-        <div id="bar"></div>
-    </div>
-    <script src="js/player.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
