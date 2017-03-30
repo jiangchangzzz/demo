@@ -4,8 +4,8 @@
 
     //点引用类型
     function Point(x,y){
-        this.x=x;
-        this.y=y;
+        this.x=x;   //x轴坐标
+        this.y=y;   //y轴坐标
     }
 
     //手势解锁引用类型
@@ -17,7 +17,7 @@
         this.circles=[];                     //空心圈的序号
         this.balls=[];                       //实心球的序号
         this.r=0;                            //九个圈的半径
-    };
+    }
 
     Lock.prototype={
 
@@ -44,6 +44,7 @@
         //绘制九个点
         drawPoint: function(){
             this.context.save();
+            
             //绘制未选择的空心圆
             this.context.beginPath();
             this.context.strokeStyle='#ccc';
@@ -78,7 +79,7 @@
                 this.context.strokeStyle='red';
                 this.context.beginPath();
 
-                var ball=this.points[this.balls[0]]
+                var ball=this.points[this.balls[0]];
                 this.context.moveTo(ball.x,ball.y);
                 for(var i=1;i<len;i++){
                     ball=this.points[this.balls[i]];
@@ -145,7 +146,7 @@
         getPassword: function(){
             return this.balls.join('');
         }
-    }
+    };
 
     //初始化界面，绑定事件处理程序
     function init(){
@@ -157,7 +158,7 @@
         //设置画布的大小
         draw.width=document.documentElement.clientWidth*0.9;
         draw.height=draw.width;
-        var position=computePosition(draw);    //画布的位置
+        var position=computePosition(draw);    //计算画布的位置
 
         var lock=new Lock(draw);
         lock.init();
@@ -171,7 +172,7 @@
         });
 
         draw.addEventListener('touchmove',function(event){
-            event.preventDefault();
+            event.preventDefault();   //防止网页被拖动
             if(drawing){
                 var x=event.targetTouches[0].pageX-position.x;
                 var y=event.targetTouches[0].pageY-position.y;
@@ -188,12 +189,12 @@
             
             if(status==="firstSet"){
                 if(lock.balls.length<5){
-                    text.innerText="密码太短，至少需要5个点"
+                    text.innerText="密码太短，至少需要5个点";
                 }
                 else{
                     lastPassword=lock.getPassword();
                     status="secondSet";
-                    text.innerText="请再次输入手势密码"
+                    text.innerText="请再次输入手势密码";
                 }
             }
             else if(status==="secondSet"){
@@ -240,7 +241,7 @@
         return {
             y: rect.top+scrollTop,
             x: rect.left+scrollLeft,
-        }
+        };
     }
 
 })();
