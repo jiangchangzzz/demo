@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-5 col-sm-offset-4">
+            <div class="col-sm-5 col-sm-offset-3">
                 <h3 id="music-name">Candy Says</h3>
                 <p id="music-artist">The Velvet Underground</p>
                 <audio id="music" preload="metadata">
@@ -39,13 +39,13 @@
                 </div>
                 <div class="row music-control">
                     <div class="col-sm-2"><i class="glyphicon glyphicon-heart"></i></div>
-                    <div class="col-sm-2"><i class="glyphicon glyphicon-align-justify" title="顺序播放"></i></div>
+                    <div class="col-sm-2"><i id="status" class="glyphicon glyphicon-align-justify" title="顺序播放"></i></div>
                     <div class="col-sm-2 col-sm-offset-4"><i id="play" class="glyphicon glyphicon-play"></i></div>
                     <div class="col-sm-2"><i id="next" class="glyphicon glyphicon-step-forward"></i></div>
                 </div>
             </div>
             <div class="col-sm-3 music-img">
-                <img src="image/风吹雪.jpg">
+                <img id="music-img">
             </div>
         </div>
     </div>
