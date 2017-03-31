@@ -1,5 +1,33 @@
 @charset 'utf-8';
 
+ul{
+    list-style: none;
+}
+
+.music-list{
+    margin-top: 40px;
+    height: 240px;
+    overflow-y: auto;
+}
+
+.music-list li{
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(157,157,157);
+}
+
+.music-list li:hover{
+    background-color: #fafafa;
+    color: #000;
+}
+
+.music-panel{
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fbfbfa;
+}
+
 .vol-progress,.music-progress{
     margin-bottom: 0;
 }
@@ -40,6 +68,10 @@
 
 .music-control .glyphicon:hover{
     opacity: 0.5;
+}
+
+.music-control #love.active{
+    color: #f00;
 }
 
 .music-img img{

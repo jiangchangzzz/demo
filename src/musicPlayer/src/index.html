@@ -13,16 +13,21 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-5 col-sm-offset-3">
+            <div class="col-sm-3">
+                <ul id="list" class="music-list">
+                </ul>
+            </div>
+            <div class="music-panel col-sm-8">
+            <div class="col-xs-8">
                 <h3 id="music-name">Candy Says</h3>
                 <p id="music-artist">The Velvet Underground</p>
                 <audio id="music" preload="metadata">
                     <source id="music-source" type="audio/mp3">
                 </audio>
                 <div class="row">
-                    <div class="col-sm-2" id="music-time">00:00</div>
-                    <div class="col-sm-1"><i class="glyphicon glyphicon-volume-up"></i></div>
-                    <div class="col-sm-2">
+                    <div class="col-xs-2" id="music-time">00:00</div>
+                    <div class="col-xs-1"><i class="glyphicon glyphicon-volume-up"></i></div>
+                    <div class="col-xs-2">
                         <div id="vol-progress" class="progress-wrap">
                             <div class="progress vol-progress">
                                 <div id="vol-bar" class="progress-bar" role="progressbar">
@@ -38,14 +43,15 @@
                     </div>
                 </div>
                 <div class="row music-control">
-                    <div class="col-sm-2"><i class="glyphicon glyphicon-heart"></i></div>
-                    <div class="col-sm-2"><i id="status" class="glyphicon glyphicon-align-justify" title="顺序播放"></i></div>
-                    <div class="col-sm-2 col-sm-offset-4"><i id="play" class="glyphicon glyphicon-play"></i></div>
-                    <div class="col-sm-2"><i id="next" class="glyphicon glyphicon-step-forward"></i></div>
+                    <div class="col-xs-2"><i id="love" class="glyphicon glyphicon-heart"></i></div>
+                    <div class="col-xs-2"><i id="status" class="glyphicon glyphicon-align-justify" title="顺序播放"></i></div>
+                    <div class="col-xs-2 col-xs-offset-4"><i id="play" class="glyphicon glyphicon-play"></i></div>
+                    <div class="col-xs-2"><i id="next" class="glyphicon glyphicon-step-forward"></i></div>
                 </div>
             </div>
-            <div class="col-sm-3 music-img">
+            <div class="col-xs-4 music-img">
                 <img id="music-img">
+            </div>
             </div>
         </div>
     </div>

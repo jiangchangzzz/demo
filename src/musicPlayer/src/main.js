@@ -17,6 +17,7 @@ var musics=[
 
 (function(){
 
+    var list=document.getElementById('list');
     var music=document.getElementById('music');
     var source=document.getElementById('music-source');
     var name=document.getElementById('music-name');
@@ -31,6 +32,7 @@ var musics=[
     var play=document.getElementById('play');
     var next=document.getElementById('next');
     var status=document.getElementById('status');
+    var love=document.getElementById('love');
 
     var img=document.getElementById('music-img');
 
@@ -67,12 +69,21 @@ var musics=[
         if(num===0){
             return '00';
         }
-        else if(num/10<1){
+        else if(num<10){
             return '0'+num;
         }
         else{
             return num.toString();
         }
+    }
+
+    //添加音乐列表
+    function addList(){
+        var str='';
+        musics.forEach(function(item,index){
+            str+='<li>'+(index+1)+'. '+item.name+'</li>';
+        });
+        list.innerHTML=str;
     }
 
     function init(){
@@ -152,8 +163,33 @@ var musics=[
             }
         });
 
+        //添加喜欢
+        love.addEventListener('click',function(){
+            this.classList.toggle('active');
+        });
+
+        //点击列表切换音乐
+        list.addEventListener('click',function(event){
+            var child=this.children;
+            for(var i=0,len=child.length;i<len;i++){
+                if(event.target===child[i]){
+                    if(i!==current){
+                        current=i;
+                        loadMusic(current);
+                        music.play();
+                        play.classList.remove('glyphicon-play');
+                        play.classList.add('glyphicon-pause');
+                        play.title='暂停';
+                    }
+                    break;
+                }
+            }
+        });
+
         //加载第一首音乐
         loadMusic(0);
+        addList();
+
     }
     init();
 
