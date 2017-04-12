@@ -1,0 +1,20 @@
+.sort-table {
+  margin: 0 auto;
+  border-collapse: collapse; }
+  .sort-table th, .sort-table td {
+    padding: 0.2em 1em;
+    text-align: center;
+    border: 1px solid #000; }
+  .sort-table th {
+    background-color: #5B5B5B;
+    color: #fff; }
+  .sort-table th.sort {
+    cursor: pointer; }
+  .sort-table th.asc:after {
+    content: ' \25B2';
+    font-size: 10px; }
+  .sort-table th.desc:after {
+    content: ' \25BC';
+    font-size: 10px; }
+
+/*# sourceMappingURL=style.css.map */
