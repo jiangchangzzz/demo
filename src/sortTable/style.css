@@ -16,5 +16,9 @@
   .sort-table th.desc:after {
     content: ' \25BC';
     font-size: 10px; }
+  .sort-table tbody tr:nth-child(even) td {
+    background-color: #EEEEEE; }
+  .sort-table tbody tr:nth-child(odd) td {
+    background-color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

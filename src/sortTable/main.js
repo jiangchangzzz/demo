@@ -70,13 +70,13 @@
                         self.clearSign();
                         target.classList.add('desc');
 
-                        self.sort(target.innerText.trim(),false)
+                        self.sort(target.innerText.trim(),true)
                     }
                     else{
                         self.clearSign();
                         target.classList.add('asc');
 
-                        self.sort(target.innerText.trim(),true);
+                        self.sort(target.innerText.trim(),false);
                     }
                     //排序完成后重新渲染表格内容
                     self.render();

@@ -26,4 +26,14 @@
         content: ' \25BC';
         font-size: 10px;
     }
+
+    tbody{
+        tr:nth-child(even) td{
+            background-color: #EEEEEE;
+        }
+
+        tr:nth-child(odd) td{
+            background-color: #fff;
+        }
+    }
 }
