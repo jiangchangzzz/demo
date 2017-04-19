@@ -1,0 +1,67 @@
+.header h1 {
+  padding: 10px 20px;
+  text-align: center; }
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  margin: 100px auto;
+  perspective: 1000px; }
+  .container .banner-group {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s; }
+    .container .banner-group .banner {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden; }
+    .container .banner-group .banner:nth-child(1) {
+      transform: rotateY(0) translateZ(285.276px); }
+    .container .banner-group .banner:nth-child(2) {
+      transform: rotateY(72deg) translateZ(285.276px); }
+    .container .banner-group .banner:nth-child(3) {
+      transform: rotateY(144deg) translateZ(285.276px); }
+    .container .banner-group .banner:nth-child(4) {
+      transform: rotateY(216deg) translateZ(285.276px); }
+    .container .banner-group .banner:nth-child(5) {
+      transform: rotateY(288deg) translateZ(285.276px); }
+  .container .group-animation {
+    animation: Banner 5s infinite;
+    animation-play-state: paused; }
+  .container .group-transform {
+    transition: transform 1s;
+    animation: none; }
+
+@keyframes Banner {
+  from {
+    transform: rotateY(0deg); }
+  20% {
+    transform: rotateY(72deg); }
+  40% {
+    transform: rotateY(144deg); }
+  60% {
+    transform: rotateY(216deg); }
+  80% {
+    transform: rotateY(288deg); }
+  to {
+    transform: rotateY(360deg); } }
+.btn-group {
+  margin-top: 100px;
+  text-align: center; }
+  .btn-group button {
+    padding: 6px 8px;
+    color: #fff;
+    background-color: pink;
+    outline: none;
+    border: 1px solid pink;
+    border-radius: 4px;
+    cursor: pointer; }
+  .btn-group button:hover {
+    color: pink;
+    background-color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
