@@ -11,6 +11,10 @@
   list-style: none; }
 
 .cloud .tag {
-  position: absolute; }
+  position: absolute;
+  cursor: pointer; }
+
+.cloud .tag:hover {
+  border: 1px solid #000; }
 
 /*# sourceMappingURL=style.css.map */

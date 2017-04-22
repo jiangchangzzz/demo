@@ -14,4 +14,9 @@
 
 .cloud .tag{
     position: absolute;
+    cursor: pointer;
+}
+
+.cloud .tag:hover{
+    border: 1px solid #000;
 }
