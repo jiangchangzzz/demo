@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    overflow: hidden;
+}
+
+.container{
+    height: 100%;
+}
+
+.sections{
+    position: relative;
+    height: 100%;
+}
+
+.section{
+    position: relative;
+    height: 100%;
+    background-color: #fff;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: #fff;
+}
+
+.section h3.index{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 100px;
+    transform: translate(-50%,-50%);
+}
+
+.section h3{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-size: 100px;
+    text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+    transform: translate(-50%,-50%);
+    transition: all 500ms;
+}
+
+.section .slide{
+    left: 50%;
+}
+
+#section1{
+    background-image: url(./banner1.jpg);
+}
+
+#section2{
+    background-image: url(./banner2.jpg);
+}
+
+#section3{
+    background-image: url(./banner3.jpg);
+}
+
+#section4{
+    background-image: url(./banner4.jpg);
+}
+
+#section5{
+    background-image: url(./banner5.jpg);
+}
+
+.page li{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.page li.active{
+    background-color: lightblue;
+    border-color: #fff;
+}
+
+.page li:hover{
+    border-color: lightblue;
+}
+
+.page.horizontal{
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.page.horizontal li{
+    float: left;
+}
+
+.page.vertical{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
